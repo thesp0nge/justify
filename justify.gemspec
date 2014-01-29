@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = Justify::VERSION
   spec.authors       = ["Paolo Perego"]
   spec.email         = ["thesp0nge@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
+  spec.description   = %q{justify is a gem helping in break very long string in a fixed width text}
+  spec.summary       = %q{justify is a gem helping in break very long string in a fixed width text}
+  spec.homepage      = "http://armoredcode.com/how-to-wrap-a-long-text-to-fit-your-terminal-width-in-ruby"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)

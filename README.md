@@ -1,6 +1,6 @@
 # Justify
 
-TODO: Write a gem description
+justify helps in formatting a very long line of text breaking it up for a given width
 
 ## Installation
 
@@ -18,7 +18,27 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Using justify it's easy.
+
+```
+require 'justify'
+
+
+"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat".justify
+
+# Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore
+# et dolore magna aliqua Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut
+# aliquip ex ea commodo consequat
+
+"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat".justify(20)
+
+# Lorem ipsum dolor sit amet
+# consectetur adipisicing
+# elit sed do eiusmod tempor
+# incididunt ut labore et
+# dolore magna aliqua Ut enim
+# ad minim veniam quis nostrudexercitation ullamco laborisnisi ut aliquip ex ea commodoconsequat
+```
 
 ## Contributing
 
