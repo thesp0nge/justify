@@ -5,23 +5,23 @@ class String
     unless self.length < len
 
       words = self.gsub("\n", " ").scan(/[\w.-]+/)
-      actual_len = 0
+      actual_len = indent_len
       output = " " * indent_len
       words.each do |w|
-        output += w
-        actual_len += w.length
-        if actual_len >= len
-          output += "\n"
-          output += " " * indent_len
-          actual_len = 0
-        else
-          output += " "
+        if (actual_len > indent_len)
+          if (actual_len + w.length>len)
+            output += "\n" + " " * indent_len
+            actual_len = indent_len
+          else
+            output += " "
+          end
         end
+        output += w
+        actual_len += w.length + 1
       end
       return output
     else
-      " " * indent_len << self
+      self
     end
-
   end
 end
