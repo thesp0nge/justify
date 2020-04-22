@@ -3,8 +3,7 @@ require "justify/version"
 class String
   def justify(len = 80, indent_len = 0)
     unless self.length < len
-
-      words = self.gsub("\n", " ").scan(/[\w.-]+/)
+      words = self.scan(/\S+/)
       actual_len = indent_len
       output = " " * indent_len
       words.each do |w|
