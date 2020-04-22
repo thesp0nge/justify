@@ -20,7 +20,7 @@ class String
       end
       return output
     else
-      self
+      " " * indent_len << self
     end
   end
 end

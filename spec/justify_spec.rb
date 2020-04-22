@@ -48,4 +48,7 @@ describe 'justify' do
   it 'optionally indent each block by the specified number of spaces' do
     expect( "a bcd Cd de".justify(4,2) ).to eq "  a\n  bcd\n  Cd\n  de"
   end
+  it 'optionally indent each block by the specified number of spaces for short strings' do
+    expect( "a bcd".justify(40,2) ).to eq "  a bcd"
+  end
 end
